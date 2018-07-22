@@ -1,11 +1,11 @@
 const path = require('path');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
+const ExactTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
   entry: {
     index: [
       'babel-polyfill',
-      './client/index.js',
+      './client/index.jsx',
     ],
   },
   output: {
@@ -17,24 +17,22 @@ module.exports = {
     loaders: [{
       loader: 'babel-loader',
       include: [path.resolve(__dirname, 'client')],
-      exclude: /node_modules/,
-      test: /\.js$/,
+      exclude: 'node_modules',
+      test: /\.(jsx|js)$/,
       query: {
-        presets: ['react', 'es2015', 'stage-0'],
+        preset: ['react', 'es2015', 'stage-0'],
       },
     }, {
-      loader: ExtractTextPlugin.extract('style', 'css?modules&localIdentName=[local]__[hash:base64:5]'),
+      loader: ExactTextPlugin.extract('style', 'css?modules&localIdentName=[local]__[hash:base64:5]'),
       test: /\.css$/,
-      exclude: /node_modules/,
+      exclude: 'node_modules',
     }],
   },
   resolve: {
     modulesDirectories: [
-      './node_modules',
+      'node_modules',
       './client',
     ],
   },
-  plugins: [
-    new ExtractTextPlugin('styles.css'),
-  ],
+  plugin: [new ExactTextPlugin('style.css')],
 };
