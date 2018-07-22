@@ -1,0 +1,56 @@
+{
+  "name": "graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JiangLiruii/GraphQL.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JiangLiruii/GraphQL/issues"
+  },
+  "homepage": "https://github.com/JiangLiruii/GraphQL#readme",
+  "devDependencies": {
+    "axios": "0.13.1",
+    "babel-core": "6.11.4",
+    "babel-eslint": "6.1.2",
+    "babel-loader": "6.2.4",
+    "babel-polyfill": "6.9.1",
+    "babel-preset-es2015": "6.9.0",
+    "babel-preset-react": "6.11.1",
+    "babel-preset-stage-0": "6.5.0",
+    "clean-tagged-string": "0.0.1-b6",
+    "concurrently": "2.2.0",
+    "css-loader": "0.23.1",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-config-airbnb-base": "^13.0.0",
+    "eslint-plugin-babel": "3.3.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.10.0",
+    "extract-text-webpack-plugin": "1.0.1",
+    "json-loader": "0.5.4",
+    "nodemon": "1.10.0",
+    "react": "15.2.1",
+    "react-dom": "15.2.1",
+    "react-redux": "4.4.5",
+    "react-router": "2.6.0",
+    "redux": "3.5.2",
+    "redux-action": "^1.2.2",
+    "style-loader": "0.13.1",
+    "webpack": "1.13.1",
+    "webpack-dev-server": "1.14.1"
+  },
+  "dependencies": {
+    "express": "4.14.0",
+    "express-graphql": "0.5.3",
+    "graphql": "0.6.2"
+  }
+}
